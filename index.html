@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital - Respostería Doña Beaatriz</title>
+    <link  rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class=""header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <h1> Panadería doña Beatrizz</h1>
+            </div>
+        </div>
+    </header> 
+    
+    <!--Navegación entre secciones-->
+    <nav class="navegación-principal">
+        <div class="container">
+            <button class="nav-btn active" data-seccion="inicio">Inicio</button>
+
+            <button class="nav-btn active" data-seccion="menu">Menú</button>
+
+            <button class="nav-btn active" data-seccion="quienes-somos">Quiénes Somos</button>
+        
+        </div>
+    </nav>
+
+    <!--BTN categorias-->
+    <nav class="categorias-menu" id="categorias-menu" style="display: none">
+        <div class="container">
+            <button class="categoria-btn active" data-categoria="pays">Pays</button>
+            <button class="categoria-btn active" data-categoria="pasteles">Pasteles</button>
+            <button class="categoria-btn active" data-categoria="galletas">Galletas</button>
+
+        </div>
+    </nav>
+
+    <!--Contenido principal-->
+    <main class="main-content">
+        <div class="container">
+
+            <!--sección inicio-->
+            <section id="inicio" class="seccion activa">
+                <div class="hero">
+                    <h2>¡Hola! Bienvendio a nuestro menú de respostería</h2>
+                    <p>Explora nuestro menú exquisito de postres</p>
+
+                    <button class="btn-principal" onclick="mostrarSeccion('menu')">Ver menú completo<i class="fas fa-arrow-right"></i>
+                    </button>
+
+                </div>
+            </section>
+
+            <!--Sección del menú-->
+            <section id="quienes-somos" class="seccion">
+                <div class="quienes-somos-contet">
+                    <h2>Nuestra historia</h2>
+                    <div class="historia">
+                        <img src="imagenes/realdelmontehidalgo (1).webp" alt="Nuestra respostería" class="img-historia">
+                        <div class="texto-historia">
+                            <p>De México para el mundo y para toda la Comarca Lagunera</p>
+                            <h3>Horarios de atención:</h3>
+                            <ul>
+                                <li>Lunes a Jueves: 7 AM - 3 PM</li>
+                                <li>Domingos: 10 AM - 4 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--pie de página-->
+    <footer class="footer">
+        <div class="container">
+            <div class="info-contact">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Dirección: Calle Geranios #44 Sur, Dgo, México.</p>
+
+                <p><i class="fas fa-phone"></i> Télefono: (+55) 871-120-40-14</p>
+
+                <p><i class="fas fa-envelope"></i> Correo eléctronico: pollito9@pan.com</p>
+            </div>
+            <div class="derechos">
+                <p>&copy; 2025 Panadería Doña Beatrizz.Todos los derechos reservados.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
