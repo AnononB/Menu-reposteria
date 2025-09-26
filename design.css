@@ -70,7 +70,7 @@ body{
 }
 
 /* Categoria del menú*/
-.cat-menu{
+.categoria-menu{
     background-color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -79,14 +79,14 @@ body{
     z-index: 100;
 }
 
-.cat-menu .container{
+.categoria-menu .container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.cat-btn{
+.categoria-btn{
     background-color: #f1f1f1;
     border: none;
     padding: 8px 16px;
@@ -96,9 +96,117 @@ body{
     font-size: 0.9rem;
 }
 
-.cat-btn:hover, .cat-btn.activate{
+.categoria-btn:hover, .categoria-btn.activate{
     background-color: #ff6b6b;
     color: black;
     transform: scale(1.05);
+}
+
+/* secciones de las categorias*/
+.seccion{
+    display: none;
+    padding: 2rem 0;
+
+}
+
+.seccion.activa{
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+
+}
+
+@keyframes fadeIn{
+    from{opacity: 0; transform: translate(20px);}
+    to{ opacity: 1; transform: translateY(0);}
+}
+
+/*hero section?*/
+/*prueba1*/
+.hero{
+    text-align: center;
+    padding:4rem 0;
+    background: linear-gradient(135deg, #747474, #090909);
+    color: white;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.hero h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-principal{
+    background-color: white;
+    color: #0984e3;
+    border:none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.btn-principal:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/*grid de platos*/
+.grid-platos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.plato{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+
+}
+
+.plato:hover{
+    transform: translateY(-5px);
+
+}
+
+.plato-imagen{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.plato-info{
+    padding: 1.5rem;
+}
+
+.plato-info h3{
+    color: #2d3436;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+
+}
+
+.palto-descripcion{
+    color: #636e72;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.palto-precio{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    display: block;
 }
 
