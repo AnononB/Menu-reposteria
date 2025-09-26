@@ -69,3 +69,36 @@ body{
     transform: translateY(-2px);
 }
 
+/* Categoria del menú*/
+.cat-menu{
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.cat-menu .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cat-btn{
+    background-color: #f1f1f1;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.cat-btn:hover, .cat-btn.activate{
+    background-color: #ff6b6b;
+    color: black;
+    transform: scale(1.05);
+}
+
