@@ -252,7 +252,7 @@ body{
 
 /* Footer*/
 .footer{
-    background-color: #2d3436;
+    background-color: #0d2344;
     color: white;
     padding: 2rem 0;
     margin-top: 3rem;
@@ -275,8 +275,8 @@ body{
 .derechos{
     text-align: center;
     margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid #636e72;
+    padding-top: 1rem;
+    border-top: 1px solid #ee5a24;
 
 }
 
