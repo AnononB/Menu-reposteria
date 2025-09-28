@@ -9,7 +9,7 @@ body{
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: black;
-    background-color: #55a390;
+    background-color: #905c2c;
 }
 
 .container{
@@ -141,7 +141,7 @@ body{
     margin-bottom: 2rem;
 }
 
-.btn-principal{
+.btn-principal{  /*boton ver menu com...*/
     background-color: white;
     color: #0984e3;
     border:none;
@@ -281,6 +281,7 @@ body{
 }
 
 /* Responsive */
+/*Reajusta el diseño en movil*/
 @media (max-with: 768px){
     .historia{
         grid-template-columns: 1fr;
